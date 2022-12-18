@@ -1,3 +1,29 @@
+  static void Main(string[] args)
+        {
+            long Y;
+            Console.WriteLine("Enter your number");
+            long X = long.Parse(Console.ReadLine());
+            Y = factorial(X);
+            Console.WriteLine(Y);
+            Console.ReadLine();
+        }
+        public static long factorial(long B)
+        {
+            long result;
+            if (B > 1)
+            {
+               result= (B * factorial(B - 1));
+                return result;
+            }
+            else
+            {
+                return  1;
+            }
+
+        }
+ 
+ -------------------------------------------------------------------------------------------------------
+ 
  static void Main(string[] args)
         {
             Console.WriteLine("Enter your numbers");
